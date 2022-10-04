@@ -1,9 +1,12 @@
 package main
 
 import (
-	interface
-	vehicle
+
 )
+
+type vehicle interface {
+	
+}
 
 type car struct {
 	model		string
