@@ -1,13 +1,38 @@
 package main
 
 import (
-
+	interface
+	vehicle
 )
+
+type car struct {
+	model		string
+	make		string
+	typeVehicle	string
+}
+
+type truck struct {
+	model		string
+	make		string
+	typeVehicle	string
+}
+
+type bike struct {
+	model		string
+	make		string
+}
 
 
 // Values array for the feedback.json file
+type Values struct{
+	Models	[]Model `json:"values"`
+}
 
 // Model array for the feedback.json file
+type Model struct{
+	Name		string `json:"model"`
+	Feedback 	[]string `json:"feedback"`
+}
 
 type rating float32
 
